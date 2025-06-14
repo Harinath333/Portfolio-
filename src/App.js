@@ -89,7 +89,7 @@ export default function App() {
     <RotatingGlobe />
   </div>
 </div>
-        <nav className="fixed top-0 left-0 w-full z-50 shadow-md px-8 py-4 flex justify-between items-center">
+        <nav className="w-full z-50 shadow-md px-8 py-4 flex justify-between items-center">
         <h1 className="text-2xl font-extrabold tracking-wider text-white">Harinath Velpula</h1>
         <ul className="flex space-x-6 text-pink-300 font-medium text-lg">
           {["About", "Journey", "Projects", "Experience", "Skills"].map((item) => (
