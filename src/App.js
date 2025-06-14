@@ -91,15 +91,6 @@ export default function App() {
 </div>
         <nav className="w-full z-50 shadow-md px-8 py-4 flex justify-between items-center">
         <h1 className="text-2xl font-extrabold tracking-wider text-white">Harinath Velpula</h1>
-        <ul className="flex space-x-6 text-pink-300 font-medium text-lg">
-          {["About", "Journey", "Projects", "Experience", "Skills"].map((item) => (
-            <li key={item}>
-              <a href={`#${item.toLowerCase()}`} className="hover:text-white transition">
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
       </nav>
 
       <div className="relative z-10 max-w-6xl mx-auto pt-36 px-8 py-14">
