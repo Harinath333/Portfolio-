@@ -89,10 +89,7 @@ export default function App() {
     <RotatingGlobe />
   </div>
 </div>
-        <nav className="w-full z-50 shadow-md px-8 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-extrabold tracking-wider text-white">Harinath Velpula</h1>
-      </nav>
-
+    
       <div className="relative z-10 max-w-6xl mx-auto pt-36 px-8 py-14">
         <motion.header
   initial={{ opacity: 0, y: -50 }}
