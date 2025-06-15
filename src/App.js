@@ -16,7 +16,7 @@ import Home from "./components/Home.jsx";
 export default function App() {
   const journey = [
     {
-      year: "2022",
+      year: "2023",
       icon: <FaGraduationCap className="text-pink-400 text-2xl" />,
       title: "Started B.Tech CSE - Data Science",
       description:
