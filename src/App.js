@@ -62,6 +62,10 @@ export default function App() {
       title: "Digit Recognizer using NumPy",
       desc: "developed a computer vision project using just numpy to detect hand written numbers from MNIST dataset",
     },
+    {
+      title: "Image to Multilingual text extractor and translator",
+      desc: "Extracts text from images using Tesseract OCR for display, storage, or translation.",
+    },
   ];
 
   const skills = [
