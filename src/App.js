@@ -58,6 +58,10 @@ export default function App() {
       title: "Multimodal Anime AI Assistant (Prototype)",
       desc: "AI assistant that accepts text, voice, and image inputs using OpenAI APIs and Voice Recognition (Phase 1).",
     },
+    {
+      title: "Digit Recognizer using NumPy",
+      desc: "developed a computer vision project using just numpy to detect hand written numbers from MNIST dataset",
+    },
   ];
 
   const skills = [
