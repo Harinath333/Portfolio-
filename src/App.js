@@ -16,7 +16,7 @@ import Home from "./components/Home.jsx";
 export default function App() {
   const journey = [
     {
-      year: "2022",
+      year: "2023",
       icon: <FaGraduationCap className="text-pink-400 text-2xl" />,
       title: "Started B.Tech CSE - Data Science",
       description:
@@ -63,6 +63,14 @@ export default function App() {
       title: "Working SaaS demo site",
       desc: "Developed a responsive SaaS demo application using React and Tailwind CSS, featuring dashboard layouts, reusable UI components, and mock API integration. Focused on clean UI, responsiveness, and real-world frontend workflows.",
       url: "https://demo-site-sepia-gamma.vercel.app/",
+    },
+    {
+      title: "Digit Recognizer using NumPy",
+      desc: "developed a computer vision project using just numpy to detect hand written numbers from MNIST dataset",
+    },
+    {
+      title: "Image to Multilingual text extractor and translator",
+      desc: "Extracts text from images using Tesseract OCR for display, storage, or translation.",
     },
   ];
 
@@ -147,7 +155,7 @@ export default function App() {
                 <FaLinkedin />
               </motion.a>
               <motion.a
-                href="https://drive.google.com/file/d/1Lk9gq7AAGfZoL39B4m37MDAkuoRQpRi-/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1VtfI6yjQMUfdXK9uYV-6e3jm3D4bdaTW/view?usp=sharing"
                 target="_blank"
                 title="Resume"
                 className="hover:text-white-400"
