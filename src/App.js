@@ -57,6 +57,12 @@ export default function App() {
     {
       title: "Multimodal Anime AI Assistant (Prototype)",
       desc: "AI assistant that accepts text, voice, and image inputs using OpenAI APIs and Voice Recognition (Phase 1).",
+      url: "https://animbot.vercel.app/",
+    },
+    {
+      title: "Working SaaS demo site",
+      desc: "Developed a responsive SaaS demo application using React and Tailwind CSS, featuring dashboard layouts, reusable UI components, and mock API integration. Focused on clean UI, responsiveness, and real-world frontend workflows.",
+      url: "https://demo-site-sepia-gamma.vercel.app/",
     },
   ];
 
@@ -89,19 +95,6 @@ export default function App() {
     <RotatingGlobe />
   </div>
 </div>
-        <nav className="fixed top-0 left-0 w-full z-50 shadow-md px-8 py-4 flex justify-between items-center">
-        <h1 className="text-2xl font-extrabold tracking-wider text-white">Harinath Velpula</h1>
-        <ul className="flex space-x-6 text-pink-300 font-medium text-lg">
-          {["About", "Journey", "Projects", "Experience", "Skills"].map((item) => (
-            <li key={item}>
-              <a href={`#${item.toLowerCase()}`} className="hover:text-white transition">
-                {item}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
-
       <div className="relative z-10 max-w-6xl mx-auto pt-36 px-8 py-14">
         <motion.header
   initial={{ opacity: 0, y: -50 }}
@@ -251,24 +244,50 @@ export default function App() {
             Projects
           </h2>
           <div className="space-y-10 max-w-5xl mx-auto">
-            {projects.map(({ title, desc }, i) => (
-              <motion.div
-                key={i}
-                whileHover={{
-                  scale: 1.07,
-                  boxShadow: "0 15px 30px rgba(219, 39, 119, 0.6)",
-                  background:
-                    "linear-gradient(135deg, #7e22ce 0%, #db2777 50%, #f43f5e 100%)",
-                }}
-                transition={{ type: "spring", stiffness: 250, damping: 20 }}
-                className="bg-gray-900 rounded-3xl p-8 cursor-pointer"
-              >
-                <h3 className="text-3xl font-extrabold text-white mb-3 drop-shadow-lg">
-                  {title}
-                </h3>
-                <p className="text-pink-300 text-lg leading-relaxed">{desc}</p>
-              </motion.div>
-            ))}
+            {projects.map(({ title, desc, url }, i) => {
+              const cardContent = (
+                <>
+                  <h3 className="text-3xl font-extrabold text-white mb-3 drop-shadow-lg">
+                    {title}
+                  </h3>
+                  <p className="text-pink-300 text-lg leading-relaxed">{desc}</p>
+                </>
+              );
+              return url ? (
+                <motion.a
+                  key={i}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{
+                    scale: 1.07,
+                    boxShadow: "0 15px 30px rgba(219, 39, 119, 0.6)",
+                    background:
+                      "linear-gradient(135deg, #7e22ce 0%, #db2777 50%, #f43f5e 100%)",
+                  }}
+                  transition={{ type: "spring", stiffness: 250, damping: 20 }}
+                  className="bg-gray-900 rounded-3xl p-8 cursor-pointer block"
+                  style={{ textDecoration: "none" }}
+                  title={`Open ${title}`}
+                >
+                  {cardContent}
+                </motion.a>
+              ) : (
+                <motion.div
+                  key={i}
+                  whileHover={{
+                    scale: 1.07,
+                    boxShadow: "0 15px 30px rgba(219, 39, 119, 0.6)",
+                    background:
+                      "linear-gradient(135deg, #7e22ce 0%, #db2777 50%, #f43f5e 100%)",
+                  }}
+                  transition={{ type: "spring", stiffness: 250, damping: 20 }}
+                  className="bg-gray-900 rounded-3xl p-8 cursor-pointer"
+                >
+                  {cardContent}
+                </motion.div>
+              );
+            })}
           </div>
         </motion.section>
 
