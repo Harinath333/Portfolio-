@@ -155,7 +155,7 @@ export default function App() {
                 <FaLinkedin />
               </motion.a>
               <motion.a
-                href="https://drive.google.com/file/d/1VtfI6yjQMUfdXK9uYV-6e3jm3D4bdaTW/view?usp=sharing"
+                href="https://drive.google.com/file/d/1wYPLQLOk80Fh5ie8b5z1gIOEM8_4A4fR/view?usp=sharing"
                 target="_blank"
                 title="Resume"
                 className="hover:text-white-400"
